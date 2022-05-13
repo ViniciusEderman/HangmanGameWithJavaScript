@@ -106,10 +106,10 @@ function wordInScreen() {
     for(i = 0; i < SecretWordChoice.length; i++){
         if(dynamicList[i] == undefined){
             dynamicList[i] = "&nbsp;"
-            wordScreen.innerHTML += "<div class='letters'>" + dynamicList[i] + "</div>"
+            wordScreen.innerHTML = wordScreen.innerHTML + "<div class='letters'>" + dynamicList[i] + "</div>"
         }
         else{
-            wordScreen.innerHTML += "<div class='letters'>" + dynamicList[i] + "</div>"
+            wordScreen.innerHTML = wordScreen.innerHTML + "<div class='letters'>" + dynamicList[i] + "</div>"
         }
     }
 }
@@ -118,6 +118,7 @@ function verifyChoiceLetters(letters) {
     if(tryX > 0) {
         changeStyleLetter("key-" + letters);
         list(letters);
+        wordInScreen();
     }
     
 }
@@ -138,6 +139,16 @@ function list(letters) {
                 dynamicList[i] = letters;
             }
         }
+    }
+
+    let win = true;
+    for(i = 0; i < SecretWordChoice.length; i++) {
+        if(SecretWordChoice[i] != dynamicList[i]) {
+            win = false;
+        }
+    }
+    if(win == true) {
+        tryX = 0;
     }
 }
 
