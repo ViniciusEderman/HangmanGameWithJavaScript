@@ -1,9 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+body{
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: rgb(202, 187, 118);
+    font-family: 'Akshar', sans-serif;;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 #image {
+    background-image: url(/views/img/forca00.png);
+    width: 234px;
+    height: 272px;
+    background-repeat: no-repeat;
+}   
+
+#secret-word{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.letters{
+    width: 16px;
+    text-align: center;
+    border-bottom: 5px solid #d46969;
+    color: rgb(2, 2, 2);
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#keyboard{
     
 }
