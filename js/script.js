@@ -132,6 +132,7 @@ function list(letters) {
     const x = SecretWordChoice.indexOf(letters)
     if(x < 0) {
         tryX--
+        changeImage();
     }
     else {
         for(i = 0; i < SecretWordChoice.length; i++) {
@@ -149,6 +150,37 @@ function list(letters) {
     }
     if(win == true) {
         tryX = 0;
+    }
+}
+
+function changeImage() {
+    switch(tryX) {
+        case 5:
+            document.getElementById("image").style.background = "url('/views/img/forca01.png')";
+        break;
+
+        case 4:
+            document.getElementById("image").style.background = "url('/views/img/forca02.png')";
+        break;
+
+        case 3:
+            document.getElementById("image").style.background = "url('/views/img/forca03.png')";
+        break;
+
+        case 2:
+            document.getElementById("image").style.background = "url('/views/img/forca04.png')";
+        break;
+
+        case 1:
+            document.getElementById("image").style.background = "url('/views/img/forca05.png')";
+        break;
+
+        case 0:
+            document.getElementById("image").style.background = "url('/views/img/forca06.png')";
+        break;
+        default: 
+            document.getElementById("image").style.background = "url('/views/img/forca00.png')";
+        break;
     }
 }
 
