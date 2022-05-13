@@ -1,3 +1,4 @@
+let tryX = 6;
 let dynamicList = [];
 let secretWordCategory;
 let SecretWordChoice;
@@ -109,6 +110,33 @@ function wordInScreen() {
         }
         else{
             wordScreen.innerHTML += "<div class='letters'>" + dynamicList[i] + "</div>"
+        }
+    }
+}
+
+function verifyChoiceLetters(letters) {
+    if(tryX > 0) {
+        changeStyleLetter("key-" + letters);
+        list(letters);
+    }
+    
+}
+
+function changeStyleLetter(letter) {
+    document.getElementById(letter).style.background = "#C71585";
+    document.getElementById(letter).style.color = "#ffffff";
+}
+
+function list(letters) {
+    const x = SecretWordChoice.indexOf(letters)
+    if(x < 0) {
+        tryX--
+    }
+    else {
+        for(i = 0; i < SecretWordChoice.length; i++) {
+            if(SecretWordChoice[i] == letters) {
+                dynamicList[i] = letters;
+            }
         }
     }
 }
