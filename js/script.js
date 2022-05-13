@@ -1,3 +1,4 @@
+let dynamicList = [];
 let secretWordCategory;
 let SecretWordChoice;
 
@@ -94,4 +95,23 @@ function buildSecretWord() {
     console.log(secretWordCategory);
 }
 
+function wordInScreen() {
+    const category = document.getElementById("category");
+    category.innerHTML = secretWordCategory;
+
+    const wordScreen = document.getElementById("secret-word");
+    wordScreen.innerHTML = "";
+
+    for(i = 0; i < SecretWordChoice.length; i++){
+        if(dynamicList[i] == undefined){
+            dynamicList[i] = "&nbsp;"
+            wordScreen.innerHTML += "<div class='letters'>" + dynamicList[i] + "</div>"
+        }
+        else{
+            wordScreen.innerHTML += "<div class='letters'>" + dynamicList[i] + "</div>"
+        }
+    }
+}
+
 buildSecretWord();
+wordInScreen();
