@@ -1,82 +1,97 @@
+let secretWordCategory;
+let SecretWordChoice;
+
 const words = [
     wd001= {
         name: "BRASIL",
         category: "COUNTRYS"
     },
     wd002= {
-        name:"UNITED STATES",
+        name: "UNITED STATES",
         category: "COUNTRYS"
     },
     wd003= {
-        name:"CANADA",
+        name: "CANADA",
         category: "COUNTRYS"
     },
     wd004= {
-        name:"JAPAN",
+        name: "JAPAN",
         category: "COUNTRYS"
     },
     wd005= {
-        name:"ENGLAND",
+        name: "ENGLAND",
         category: "COUNTRYS"
     },
     wd006= {
-        name:"CHINA",
+        name: "CHINA",
         category: "COUNTRYS"
     },
     wd007= {
-        name:"EUROPE",
+        name: "EUROPE",
         category: "COUNTRYS"
     },
     wd008= {
-        name:"PORTUGAL",
+        name: "PORTUGAL",
         category: "COUNTRYS"
     },
     wd009= {
-        name:"CUBA",
+        name: "CUBA",
         category: "COUNTRYS"
     },
     wd010= {
-        name:"CHILE",
+        name: "CHILE",
         category: "COUNTRYS"
     },
     wd011= {
-        name:"DOG",
+        name: "DOG",
         category: "ANIMALS"
     },
     wd012= {
-        name:"CAT",
+        name: "CAT",
         category: "ANIMALS"
     },
     wd013= {
-        name:"BAT",
+        name: "BAT",
         category: "ANIMALS"
     },
     wd014= {
-        name:"FOX",
+        name: "FOX",
         category: "ANIMALS"
     },
     wd015= {
-        name:"FISH",
+        name: "FISH",
         category: "ANIMALS"
     },
     wd016= {
-        name:"BULL",
+        name: "BULL",
         category: "ANIMALS"
     },
     wd017= {
-        name:"PIG",
+        name: "PIG",
         category: "ANIMALS"
     },
     wd018= {
-        name:"GIRAFFE",
+        name: "GIRAFFE",
         category: "ANIMALS"
     },
     wd019= {
-        name:"OWL",
+        name: "OWL",
         category: "ANIMALS"
     },
     wd020= {
-        name:"TIGER",
+        name: "TIGER",
         category: "ANIMALS"
     }
 ]
+
+function buildSecretWord() {
+
+    const indexWord = parseInt(Math.random() * words.length);
+    
+    SecretWordChoice = words[indexWord].name;
+    secretWordCategory = words[indexWord].category;
+    console.log(SecretWordChoice);
+    console.log(secretWordCategory);
+}
+
+buildSecretWord();
