@@ -102,3 +102,36 @@ body{
         font-size: 1.5em;
     }
 }
+
+@media (min-width: 426) {
+    .keys button{
+        width: 36px;
+        height: 36px;
+    }
+    #secret-word{
+        font-size: 1.5em;
+    }
+    .letters{
+        width: 20px;
+    }
+    #category{
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 769px) {
+    .keys button{
+        width: 68px;
+        height: 68px;
+        font-size: 2em;
+    }
+    #secret-word{
+        font-size: 2.5em;
+    }
+    .letters{
+        width: 35px;
+    }
+    #category{
+        font-size: 2em;
+    }
+}
