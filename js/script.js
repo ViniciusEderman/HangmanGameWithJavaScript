@@ -2,6 +2,11 @@ let tryX = 6;
 let dynamicList = [];
 let secretWordCategory;
 let SecretWordChoice;
+let btnRestart = document.querySelector("#btnRestart")
+
+btnRestart.addEventListener("click", function(){
+    location.reload();
+});
 
 const words = [
     wd001= {
@@ -134,6 +139,9 @@ function list(letters) {
     if(x < 0) {
         tryX--
         changeImage();
+        if(tryX == 0) {
+          openModal("You Lose, The secret word is:" + " " + SecretWordChoice);
+        }
     }
     else {
         for(i = 0; i < SecretWordChoice.length; i++) {
@@ -150,6 +158,7 @@ function list(letters) {
         }
     }
     if(win == true) {
+        openModal("You WIN!");
         tryX = 0;
     }
 }
@@ -183,6 +192,18 @@ function changeImage() {
             document.getElementById("image").style.background = "url('/views/img/forca00.png')";
         break;
     }
+}
+
+function openModal(titule, message) {
+    let modalTitule = document.getElementById("exampleModalLabel");
+    modalTitule.innerText = titule;
+
+    let modalBody = document.getElementById("modalBody");
+    modalBody.innerHTML = message;
+
+    $("#myModal").modal({
+        show: true
+    });
 }
 
 buildSecretWord();
