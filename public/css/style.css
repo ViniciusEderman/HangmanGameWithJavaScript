@@ -65,6 +65,10 @@ body{
     font-weight: 850;
 }
 
+.keys button:disabled{
+    cursor: not-allowed;
+}
+
 .keys button:hover{
     transform: scale(1.5);
 }

@@ -115,6 +115,7 @@ function wordInScreen() {
 }
 
 function verifyChoiceLetters(letters) {
+    document.getElementById("key-" + letters).disabled = true;
     if(tryX > 0) {
         changeStyleLetter("key-" + letters);
         list(letters);
