@@ -1,14 +1,14 @@
 # In this project, you will to saw my second game built with JavaScript/Html/Css/Bootstrap
- I made this project to work some JS animations together with an improvement of my CSS.
+ I made this project to work some JS animations together with an improvement of my CSS
  <br>
  The game is very simple, just clone the repository, access the views folder and start with server(Live Serv) 
 
-# About the future of the project
- Como é apenas um jogo para praticar, e entender mais conceitos, eu decidi que não irei trazer novas atualizações, não por enquanto.
+# About the future of the project:
+ As it's just a game to practice and understand more concepts. I've decided that I won't bring new updates, {not for now}
  <br>
- Porém, pretendo colocar o jogo em algum servidor, assim evitando que seja necessário clonar o repositório para acessar. 
+ It is intended to put the game on a server, as soon as it is necessary to clone the other device for access
  <br>
- Assim que isto for realizado, irei dar um update aqui, alocando o link para acesso do game.
+ As soon as this is done, I will give an update here, allocating the link to access the game.
 
-# Sobre o jogo
+# About my game:
  
