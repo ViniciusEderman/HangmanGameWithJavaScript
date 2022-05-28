@@ -1,7 +1,6 @@
 # 🤞 In this project, you will to saw my second game built with JavaScript/Html/Css/Bootstrap 🤞
  I made this project to work some JS animations together with an improvement of my CSS
  <br>
- The game is very simple, just clone the repository, access the views folder and start with server(Live Serv) 
 
 # 🖥️ About the future of the project:
  As it's just a game to practice and understand more concepts. I've decided that I won't bring new updates, {not for now}
@@ -16,3 +15,8 @@
  REMEMBER IF:
  <br>
  The whole game is in english
+
+# Start the game:
+ You need to clone my repository, open the folder(views) and start the index.html with(Live Serv) 
+ <br>
+ After do this, you can to play my game.
