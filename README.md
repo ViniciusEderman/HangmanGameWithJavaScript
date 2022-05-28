@@ -11,4 +11,8 @@
  As soon as this is done, I will give an update here, allocating the link to access the game.
 
 # About my game:
- 
+ It's a classic hangman game, where the user must hit the secret words based on themes
+ <br>
+ REMEMBER IF 
+ <br>
+ The whole game is in english
