@@ -16,7 +16,7 @@
  <br>
  The whole game is in english
 
-# Start the game:
+# 💬 Start the game:
  You need to clone my repository, open the folder(views) and start the index.html with(Live Serv) 
  <br>
  After do this, you can to play my game.
