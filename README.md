@@ -3,7 +3,9 @@
  <br>
 
 # 🖥️ About the future of the project:
- As it's just a game to practice and understand more concepts. I've decided that I won't bring new updates, {not for now}
+ As it's just a game to practice and understand more concepts. I've decided that I won't bring new updates, 
+ <br> 
+ {not for now}
  <br>
  It is intended to put the game on a server, as soon as it is necessary to clone the other device for access
  <br>
